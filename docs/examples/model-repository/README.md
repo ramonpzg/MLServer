@@ -6,7 +6,7 @@ This extension builds on top of the support for [Multi-Model Serving](../mms/REA
 
 The API to manage the model repository is modelled after [Triton's Model Repository extension](https://github.com/triton-inference-server/server/blob/master/docs/protocol/extension_model_repository.md) to the V2 Dataplane and is thus fully compatible with it.
 
-This notebook will walk you through an example using the Model Repository API.
+This notebook will walk you through an example on how to use the Model Repository API.
 
 
 ## Training
