@@ -23,21 +23,6 @@ models](./custom/README.md)).
 - [Serving Alibi Detect models](./alibi-detect/README.md)
 - [Serving HuggingFace models](./huggingface/README.md)
 
-```{toctree}
-:caption: Inference Runtimes
-:titlesonly:
-:hidden:
-
-./sklearn/README.md
-./xgboost/README.md
-./lightgbm/README.md
-./tempo/README.md
-./mlflow/README.md
-./custom/README.md
-./alibi-detect/README.md
-./huggingface/README.md
-```
-
 ## MLServer Features
 
 To see some of the advanced features included in MLServer (e.g. multi-model
@@ -50,29 +35,9 @@ serving), check out the examples below.
 - [Serving custom models requiring JSON inputs or outputs](./custom-json/README.md)
 - [Serving models through Kafka](./kafka/README.md)
 
-```{toctree}
-:caption: MLServer Features
-:titlesonly:
-:hidden:
-
-./mms/README.md
-./model-repository/README.md
-./content-type/README.md
-./conda/README.md
-./custom-json/README.md
-./kafka/README.md
-```
 
 ## Tutorials
 
 Tutorials are designed to be *beginner-friendly* and walk through accomplishing a series of tasks using MLServer (and other tools). 
 
 - [Deploying a Custom Tensorflow Model with MLServer and Seldon Core](./cassava/README.md)
-
-```{toctree}
-:caption: Tutorials
-:titlesonly:
-:hidden:
-
-./cassava/README.md
-```
