@@ -7,11 +7,7 @@ runtimes](../../user-guide/custom) and [codecs](../../user-guide/content-type).
 Below, you can find the main reference for the Python API exposed by the
 MLServer framework.
 
-```{toctree}
-:titlesonly:
-
-./model.md
-./types.md
-./codecs.md
-./metrics.md
-```
+- [MLModel](./model.md)
+- [Types](./types.md)
+- [Codecs](./codecs.md)
+- [Metrics](./metrics.md)
