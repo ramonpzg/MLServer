@@ -22,8 +22,7 @@ spec. Watch a quick video introducing the project [here](https://www.youtube.com
 - Scalability with deployment in Kubernetes native frameworks, including
   [Seldon Core](https://docs.seldon.io/projects/seldon-core/en/latest/graph/protocols.html#v2-kfserving-protocol) and
   [KServe (formerly known as KFServing)](https://kserve.github.io/website/modelserving/v1beta1/sklearn/v2/), where
-  MLServer is the core Python inference server used to serve machine learning
-  models.
+  MLServer is the core Python inference server used to serve machine learning models.
 - Support for the standard [V2 Inference Protocol](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html) on
   both the gRPC and REST flavours, which has been standardised and adopted by
   various model serving frameworks.
