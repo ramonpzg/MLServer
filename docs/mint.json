@@ -1,0 +1,112 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
+  },
+  "anchors": [
+    {
+      "icon": "b",
+      "name": "Seldon",
+      "url": "https://seldon.io"
+    },
+    {
+      "icon": "newspaper",
+      "name": "Releases",
+      "url": "https://github.com/SeldonIO/MLServer/CHANGELOG.md"
+    },
+    {
+      "icon": "books",
+      "name": "MLServer examples",
+      "url": "https://github.com/SeldonIO/MLServer/docs/examples"
+    }
+  ],
+  "colors": {
+    "anchors": {
+      "from": "#4CA3FF",
+      "to": "#009959"
+    },
+    "background": {
+      "dark": "#090014"
+    },
+    "dark": "#009959",
+    "light": "#009959",
+    "primary": "#009959"
+  },
+  "favicon": "/favicon.svg",
+  "footerSocials": {
+    "github": "https://github.com/SeldonIO/MLServer",
+    "twitter": "https://twitter.com/SeldonIO"
+  },
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "name": "Truss",
+  "navigation": [
+    {
+      "group": "Getting started",
+      "pages": [
+        "getting-started",
+        "user-guide",
+        "reference"
+      ]
+    },
+    {
+      "group": "MLServer Reference",
+      "pages": [
+        "reference/mlflow"
+      ]
+    },
+    {
+      "group": "CLI reference",
+      "pages": [
+        "reference/cli",
+        "reference/cli/init",
+        "reference/cli/push",
+        "reference/cli/watch",
+        "reference/cli/predict",
+        {
+          "group": "Advanced usage",
+          "pages": [
+            "reference/cli/image",
+            "reference/cli/container",
+            "reference/cli/cleanup"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Contributor's guide",
+      "pages": [
+        "contribute/contributing",
+        "contribute/setup",
+        "contribute/release"
+      ]
+    }
+  ],
+  "tabs": [
+    {
+      "name": "Reference docs",
+      "url": "reference"
+    },
+    {
+      "name": "Learn model deployment",
+      "url": "learn"
+    },
+    {
+      "name": "Contributor guides",
+      "url": "contribute"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "GitHub",
+    "url": "https://github.com/SeldonIO/MLServer/"
+  },
+  "topbarLinks": [
+    {
+      "name": "Issues",
+      "url": "https://github.com/SeldonIO/MLServer/issues"
+    }
+  ]
+}
