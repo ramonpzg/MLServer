@@ -1,4 +1,7 @@
-# MLServer
+---
+title: 'MLServer'
+description: 'An open source inference server for your machine learning models.'
+---
 
 An open source inference server for your machine learning models.
 
