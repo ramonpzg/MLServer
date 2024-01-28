@@ -1,4 +1,7 @@
-# User Guide
+---
+title: "User Guide"
+excerpt: "Learn the ins and outs of MLServer"
+---
 
 On this section you can learn more about the different features of MLServer and
 how to use them.

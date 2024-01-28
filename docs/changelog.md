@@ -1,4 +1,7 @@
-# Changelog
+---
+title: "Changelog"
+excerpt: "Details on each new version of MLServer"
+---
 
 
 <a name="1.3.5"></a>

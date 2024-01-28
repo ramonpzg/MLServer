@@ -1,4 +1,7 @@
-# Metrics
+---
+title: "Metrics"
+excerpt: "Learn how to use MLServer Metrics"
+---
 
 Out-of-the-box, MLServer exposes a set of metrics that help you monitor your
 machine learning workloads in production.

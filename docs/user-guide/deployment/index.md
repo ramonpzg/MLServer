@@ -1,4 +1,7 @@
-# Deployment
+---
+title: "Deployment"
+excerpt: "Learn about the different ways in which you can deploy MLServer"
+---
 
 MLServer is currently used as the core Python inference server in some of most
 popular Kubernetes-native serving frameworks, including [Seldon

@@ -1,4 +1,7 @@
-# Adaptive Batching
+---
+title: "Adaptive Batching"
+excerpt: "MLServer includes support to batch requests together transparently on-the-fly."
+---
 
 MLServer includes support to batch requests together transparently on-the-fly.
 We refer to this as "adaptive batching", although it can also be known as

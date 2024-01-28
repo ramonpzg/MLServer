@@ -1,4 +1,7 @@
-# OpenAPI Support
+---
+title: "OpenAPI Support"
+excerpt: "OpenAPI instructions for the Open Inference Protocol"
+---
 
 MLServer follows the Open Inference Protocol (previously known as the "V2
 Protocol").

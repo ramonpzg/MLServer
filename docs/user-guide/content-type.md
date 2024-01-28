@@ -1,4 +1,7 @@
-# Content Types (and Codecs)
+---
+title: "Content Types (and Codecs)"
+excerpt: "Learn about codecs and how they operate with the Open Inference Protocol"
+---
 
 Machine learning models generally expect their inputs to be passed down as a
 particular Python type.

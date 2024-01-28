@@ -1,4 +1,7 @@
-# Deployment with Seldon Core
+---
+title: "Deployment with Seldon Core"
+excerpt: "Combine Seldon Core and MLServer to take your ML models to production."
+---
 
 MLServer is used as the [core Python inference
 server](https://docs.seldon.io/projects/seldon-core/en/latest/graph/protocols.html#v2-kfserving-protocol)

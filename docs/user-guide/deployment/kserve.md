@@ -1,4 +1,7 @@
-# Deployment with KServe
+---
+title: "Deployment with KServe"
+excerpt: "Combine KServe and MLServer to take your ML models to production."
+---
 
 MLServer is used as the [core Python inference
 server](https://kserve.github.io/website/modelserving/v1beta1/sklearn/v2/) in
