@@ -1,24 +1,24 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "modeToggle": {
-    "default": "light",
-    "isHidden": true
+    "default": "dark",
+    "isHidden": false
   },
   "anchors": [
     {
-      "icon": "b",
+      "icon": "s",
       "name": "Seldon",
       "url": "https://seldon.io"
     },
     {
       "icon": "newspaper",
       "name": "Releases",
-      "url": "https://github.com/SeldonIO/MLServer/CHANGELOG.md"
+      "url": "changelog"
     },
     {
       "icon": "books",
       "name": "MLServer examples",
-      "url": "https://github.com/SeldonIO/MLServer/docs/examples"
+      "url": "examples"
     }
   ],
   "colors": {
@@ -39,49 +39,90 @@
     "twitter": "https://twitter.com/SeldonIO"
   },
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/favicon.svg",
+    "light": "/favicon.svg"
   },
-  "name": "Truss",
+  "name": "MLServer",
   "navigation": [
     {
-      "group": "Getting started",
+      "group": "Welcome",
       "pages": [
-        "getting-started",
-        "user-guide",
-        "reference"
+        "README",
+        "getting-started"
       ]
     },
     {
-      "group": "MLServer Reference",
+      "group": "User Guide",
       "pages": [
-        "reference/mlflow"
-      ]
-    },
-    {
-      "group": "CLI reference",
-      "pages": [
-        "reference/cli",
-        "reference/cli/init",
-        "reference/cli/push",
-        "reference/cli/watch",
-        "reference/cli/predict",
+        "user-guide/index",
+        "user-guide/content-type",
+        "user-guide/openapi",
+        "user-guide/parallel-inference",
+        "user-guide/adaptive-batching",
+        "user-guide/custom",
+        "user-guide/metrics",
         {
-          "group": "Advanced usage",
+          "group": "Deployment",
           "pages": [
-            "reference/cli/image",
-            "reference/cli/container",
-            "reference/cli/cleanup"
+            "user-guide/deployment/index",
+            "user-guide/deployment/kserve",
+            "user-guide/deployment/seldon-core"
           ]
         }
       ]
     },
     {
-      "group": "Contributor's guide",
+      "group": "Inference Runtimes",
       "pages": [
-        "contribute/contributing",
-        "contribute/setup",
-        "contribute/release"
+        "runtimes/index",
+        "runtimes/sklearn",
+        "runtimes/xgboost",
+        "runtimes/mlflow",
+        "runtimes/mllib",
+        "runtimes/lightgbm",
+        "runtimes/catboost",
+        "runtimes/alibi-detect",
+        "runtimes/alibi-explain",
+        "runtimes/huggingface",
+        "runtimes/custom"
+      ]
+    },{
+      "group": "Examples",
+      "pages": [
+        "examples/sklearn/README",
+        "examples/xgboost/README",
+        "examples/lightgbm/README",
+        "examples/tempo/README",
+        "examples/mlflow/README",
+        "examples/custom/README",
+        "examples/alibi-detect/README",
+        "examples/huggingface/README",
+        "examples/mms/README",
+        "examples/model-repository/README",
+        "examples/content-type/README",
+        "examples/conda/README",
+        "examples/custom-json/README",
+        "examples/kafka/README",
+        "examples/cassava/README"
+      ]
+    },
+    {
+      "group": "Reference",
+      "pages": [
+        "reference/README",
+        "reference/settings",
+        "reference/model-settings",
+        "reference/cli",
+        {
+          "group": "API",
+          "pages": [
+            "reference/api/README",
+            "reference/api/model",
+            "reference/api/types",
+            "reference/api/codecs",
+            "reference/api/metrics"
+          ]
+        }
       ]
     }
   ],
@@ -91,12 +132,12 @@
       "url": "reference"
     },
     {
-      "name": "Learn model deployment",
-      "url": "learn"
+      "name": "Changelog",
+      "url": "changelog"
     },
     {
-      "name": "Contributor guides",
-      "url": "contribute"
+      "name": "Contributor's Guide",
+      "url": "CONTRIBUTING"
     }
   ],
   "topbarCtaButton": {
