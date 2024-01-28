@@ -1,6 +1,7 @@
 ---
 title: "Metrics"
 excerpt: "Learn how to use MLServer Metrics"
+category: "65b6a38c75e5f000545597a6"
 ---
 
 Out-of-the-box, MLServer exposes a set of metrics that help you monitor your

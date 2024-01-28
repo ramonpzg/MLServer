@@ -1,6 +1,7 @@
 ---
 title: "Parallel Inference"
 excerpt: "Run inference in parallel with MLServer"
+category: "65b6a38c75e5f000545597a6"
 ---
 
 Out of the box, MLServer includes support to offload inference workloads to a

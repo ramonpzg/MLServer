@@ -1,6 +1,7 @@
 ---
 title: "Content Types (and Codecs)"
 excerpt: "Learn about codecs and how they operate with the Open Inference Protocol"
+category: "65b6a38c75e5f000545597a6"
 ---
 
 Machine learning models generally expect their inputs to be passed down as a

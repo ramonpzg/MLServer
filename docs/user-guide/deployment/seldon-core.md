@@ -1,6 +1,7 @@
 ---
 title: "Deployment with Seldon Core"
 excerpt: "Combine Seldon Core and MLServer to take your ML models to production."
+category: "65b6a38c75e5f000545597a6"
 ---
 
 MLServer is used as the [core Python inference

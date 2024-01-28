@@ -1,6 +1,7 @@
 ---
 title: "Adaptive Batching"
 excerpt: "MLServer includes support to batch requests together transparently on-the-fly."
+category: "65b6a38c75e5f000545597a6"
 ---
 
 MLServer includes support to batch requests together transparently on-the-fly.
