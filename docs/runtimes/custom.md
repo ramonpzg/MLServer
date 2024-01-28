@@ -1,4 +1,7 @@
-# Custom Inference Runtimes
+---
+title: 'Custom Inference Runtimes'
+description: 'Custom Inference runtimes allow you to define custom models to run within MLServer.'
+---
 
 There may be cases where the [inference runtimes](./index) offered
 out-of-the-box by MLServer may not be enough, or where you may need **extra

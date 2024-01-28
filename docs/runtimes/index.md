@@ -1,4 +1,7 @@
-# Inference Runtimes
+---
+title: 'Inference Runtimes'
+description: 'Inference runtimes allow you to define how your model should be used within MLServer.'
+---
 
 Inference runtimes allow you to define how your model should be used within
 MLServer.
