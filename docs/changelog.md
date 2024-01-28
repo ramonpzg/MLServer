@@ -1,6 +1,7 @@
 ---
 title: "Changelog"
 excerpt: "Details on each new version of MLServer"
+category: "65b6a38c75e5f000545597a6"
 ---
 
 
