@@ -149,5 +149,10 @@
       "name": "Issues",
       "url": "https://github.com/SeldonIO/MLServer/issues"
     }
-  ]
+  ],
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
+  }
 }
