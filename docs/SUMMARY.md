@@ -1,3 +1,4 @@
+- [MLServer](README.md)
 - [Getting Started](getting-started.md)
 - [User Guide](user-guide/index.md)
     - [Content Types (and Codecs)](user-guide/content-type.md)
