@@ -1,5 +1,5 @@
 - [MLServer](README.md)
-- [Getting Started](getting-started.md)
+- [Getting Started](getting-started/README.md)
 - [User Guide](user-guide/index.md)
     - [Content Types (and Codecs)](user-guide/content-type.md)
     - [OpenAPI Support](user-guide/openapi.md)
