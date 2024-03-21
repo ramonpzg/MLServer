@@ -4,35 +4,13 @@ excerpt: "Learn about codecs and how they operate with the Open Inference Protoc
 category: "65b6a38c75e5f000545597a6"
 ---
 
-Machine learning models generally expect their inputs to be passed down as a
-particular Python type.
-Most commonly, this type ranges from _"general purpose"_ NumPy arrays or Pandas
-DataFrames to more granular definitions, like `datetime` objects, `Pillow`
-images, etc.
-Unfortunately, the definition of the [V2 Inference
-Protocol](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html) doesn't
-cover any of the specific use cases.
-This protocol can be thought of a wider _"lower level"_ spec, which only
-defines what fields a payload should have.
+Machine learning models generally expect their inputs to be passed down as a particular Python type. Most commonly, this type ranges from _"general purpose"_ NumPy arrays or Pandas DataFrames to more granular definitions, like `datetime` objects, `Pillow` images, etc. Unfortunately, the definition of the [V2 Inference Protocol](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html) doesn't cover any of the specific use cases. This protocol can be thought of a wider _"lower level"_ spec, which only defines what fields a payload should have.
 
-To account for this gap, MLServer introduces support for **content types**,
-which offer a way to let MLServer know how it should _"decode"_ V2-compatible
-payloads.
-When shaped in the right way, these payloads should _"encode"_ all the
-information required to extract the higher level Python type that will be
-required for a model.
+To account for this gap, MLServer introduces support for **content types**, which offer a way to let MLServer know how it should _"decode"_ V2-compatible payloads. When shaped in the right way, these payloads should _"encode"_ all the information required to extract the higher level Python type that will be required for a model.
 
-To illustrate the above, we can think of a Scikit-Learn pipeline, which takes
-in a Pandas DataFrame and returns a NumPy Array.
-Without the use of **content types**, the V2 payload itself would probably lack
-information about how this payload should be treated by MLServer
-Likewise, the Scikit-Learn pipeline wouldn't know how to treat a raw V2
-payload.
-In this scenario, the use of content types allows us to specify information on
-what's the actual _"higher level"_ information encoded within the V2 protocol
-payloads.
+To illustrate the above, we can think of a Scikit-Learn pipeline, which takes in a Pandas DataFrame and returns a NumPy Array. Without the use of **content types**, the V2 payload itself would probably lack information about how this payload should be treated by MLServer Likewise, the Scikit-Learn pipeline wouldn't know how to treat a raw V2 payload. In this scenario, the use of content types allows us to specify information on what's the actual _"higher level"_ information encoded within the V2 protocol payloads.
 
-![Content Types](../assets/content-type.svg)
+![Content Types](./assets/content-type.svg)
 
 ## Usage
 

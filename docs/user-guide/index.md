@@ -4,17 +4,4 @@ excerpt: "Learn the ins and outs of MLServer"
 category: "65b6a38c75e5f000545597a6"
 ---
 
-On this section you can learn more about the different features of MLServer and
-how to use them.
-
-```{toctree}
-:titlesonly:
-
-./content-type
-./openapi
-./parallel-inference
-./adaptive-batching
-./custom
-./metrics
-./deployment/index
-```
+On this section you can learn more about the different features of MLServer and how to use them.

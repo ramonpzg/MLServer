@@ -1,5 +1,5 @@
 ---
-title: "MLServer"
+title: "Introduction"
 excerpt: "An open source inference server for your machine learning models."
 category: "65b6a38c75e5f000545597a6"
 ---
@@ -10,66 +10,37 @@ An open source inference server for your machine learning models.
 
 ## Overview
 
-MLServer aims to provide an easy way to start serving your machine learning
-models through a REST and gRPC interface, fully compliant with [KFServing's V2
-Dataplane](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html)
-spec. Watch a quick video introducing the project [here](https://www.youtube.com/watch?v=aZHe3z-8C_w).
+MLServer aims to provide an easy way to start serving your machine learning models through a REST and gRPC interface, fully compliant with [KFServing's V2 Dataplane](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html) spec. Watch a quick video introducing the project [here](https://www.youtube.com/watch?v=aZHe3z-8C_w).
 
-- Multi-model serving, letting users run multiple models within the same
-  process.
-- Ability to run [inference in parallel for vertical
-  scaling](https://mlserver.readthedocs.io/en/latest/user-guide/parallel-inference.html)
-  across multiple models through a pool of inference workers.
-- Support for [adaptive
-  batching](https://mlserver.readthedocs.io/en/latest/user-guide/adaptive-batching.html),
-  to group inference requests together on the fly.
-- Scalability with deployment in Kubernetes native frameworks, including
-  [Seldon Core](https://docs.seldon.io/projects/seldon-core/en/latest/graph/protocols.html#v2-kfserving-protocol) and
-  [KServe (formerly known as KFServing)](https://kserve.github.io/website/modelserving/v1beta1/sklearn/v2/), where
-  MLServer is the core Python inference server used to serve machine learning
-  models.
-- Support for the standard [V2 Inference Protocol](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html) on
-  both the gRPC and REST flavours, which has been standardised and adopted by
-  various model serving frameworks.
+- Multi-model serving, letting users run multiple models within the same   process.
+- Ability to run [inference in parallel for vertical scaling](https://mlserver.readthedocs.io/en/latest/user-guide/parallel-inference.html) across multiple models through a pool of inference workers.
+- Support for [adaptive batching](https://mlserver.readthedocs.io/en/latest/user-guide/adaptive-batching.html), to group inference requests together on the fly.
+- Scalability with deployment in Kubernetes native frameworks, including [Seldon Core](https://docs.seldon.io/projects/seldon-core/en/latest/graph/protocols.html#v2-kfserving-protocol) and [KServe (formerly known as KFServing)](https://kserve.github.io/website/modelserving/v1beta1/sklearn/v2/), where MLServer is the core Python inference server used to serve machine learning models.
+- Support for the standard [V2 Inference Protocol](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/v2-protocol.html) on both the gRPC and REST flavours, which has been standardised and adopted by various model serving frameworks.
 
-You can read more about the goals of this project on the [initial design
-document](https://docs.google.com/document/d/1C2uf4SaAtwLTlBCciOhvdiKQ2Eay4U72VxAD4bXe7iU/edit?usp=sharing).
+You can read more about the goals of this project on the [initial design document](https://docs.google.com/document/d/1C2uf4SaAtwLTlBCciOhvdiKQ2Eay4U72VxAD4bXe7iU/edit?usp=sharing).
 
 ## Usage
 
 You can install the `mlserver` package running:
 
-```bash
+```shell
 pip install mlserver
 ```
 
-Note that to use any of the optional [inference runtimes](#inference-runtimes),
-you'll need to install the relevant package.
-For example, to serve a `scikit-learn` model, you would need to install the
-`mlserver-sklearn` package:
+Note that to use any of the optional [inference runtimes](#inference-runtimes), you'll need to install the relevant package. For example, to serve a `scikit-learn` model, you would need to install the `mlserver-sklearn` package:
 
-```bash
+```shell
 pip install mlserver-sklearn
 ```
 
-For further information on how to use MLServer, you can check any of the
-[available examples](#examples).
+For further information on how to use MLServer, you can check any of the [available examples](#examples).
 
 ## Inference Runtimes
 
-Inference runtimes allow you to define how your model should be used within
-MLServer.
-You can think of them as the **backend glue** between MLServer and your machine
-learning framework of choice.
-You can read more about [inference runtimes in their documentation
-page](./docs/runtimes/index.md).
+Inference runtimes allow you to define how your model should be used within MLServer. You can think of them as the **backend glue** between MLServer and your machine learning framework of choice. You can read more about [inference runtimes in their documentation page](./docs/runtimes/index.md).
 
-Out of the box, MLServer comes with a set of pre-packaged runtimes which let
-you interact with a subset of common frameworks.
-This allows you to start serving models saved in these frameworks straight
-away.
-However, it's also possible to **[write custom
-runtimes](./docs/runtimes/custom.md)**.
+Out of the box, MLServer comes with a set of pre-packaged runtimes which let you interact with a subset of common frameworks. This allows you to start serving models saved in these frameworks straight away. However, it's also possible to **[write custom runtimes](./docs/runtimes/custom.md)**.
 
 Out of the box, MLServer provides support for:
 
@@ -87,10 +58,7 @@ Out of the box, MLServer provides support for:
 
 ## Examples
 
-To see MLServer in action, check out [our full list of
-examples](./docs/examples/index.md).
-You can find below a few selected examples showcasing how you can leverage
-MLServer to start serving your machine learning models.
+To see MLServer in action, check out [our full list of examples](./docs/examples/index.md). You can find below a few selected examples showcasing how you can leverage MLServer to start serving your machine learning models.
 
 - [Serving a `scikit-learn` model](./docs/examples/sklearn/README.md)
 - [Serving a `xgboost` model](./docs/examples/xgboost/README.md)
@@ -106,13 +74,10 @@ MLServer to start serving your machine learning models.
 
 ### Versioning
 
-Both the main `mlserver` package and the [inference runtimes
-packages](./docs/runtimes/index.md) try to follow the same versioning schema.
-To bump the version across all of them, you can use the
-[`./hack/update-version.sh`](./hack/update-version.sh) script.
+Both the main `mlserver` package and the [inference runtimes packages](./docs/runtimes/index.md) try to follow the same versioning schema. To bump the version across all of them, you can use the [`./hack/update-version.sh`](./hack/update-version.sh) script.
 
 For example:
 
-```bash
+```shell
 ./hack/update-version.sh 0.2.0.dev1
 ```
